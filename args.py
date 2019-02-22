@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def main():
- x = ('hi','hello','world')
+ x = ('hi','hello','world','!')
  kitten(*x)
 
 def kitten(*args):
