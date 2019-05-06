@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
-## Write a function to return a letter, that occurs max no. of times in a given string, if two letters## have same count then return a letter that occurs first in the string 
-## Ex: s = 'bbaaacc'  string s has 'a','b' and 'c','a' appear 3 times, then return 'a' as it appears
-## maximum times
-## Ex: s = 'bbbaaaccc'  string s has 'a','b' and 'c', appear 3 times, then return 'b' as it appears
-## first 
-## Ex: s = 'abbbbaaaccc' string s has 'a','b' and 'c', 'a' and 'b' appear 4 times, then return 'a' as ## it appears first
-
+"""
+Write a function to return a letter, that occurs max no. of times in a given string, if two letters have same count then return a letter that occurs first in the string 
+Ex: s = 'bbaaacc'  string s has 'a','b' and 'c','a' appear 3 times, then return 'a' as it appears maximum times
+Ex: s = 'bbbaaaccc'  string s has 'a','b' and 'c', appear 3 times, then return 'b' as it appears firstEx: s = 'abbbbaaaccc' string s has 'a','b' and 'c', 'a' and 'b' appear 4 times, then return 'a' as ## it appears first
+"""
 
 def max_letter(s):
   ##returns a letter##
@@ -39,7 +37,7 @@ def max_letter(s):
           temp_v = v            # updating temp_v and temp_k with current k,v
           temp_k = k
 
-      elif (v[0] == temp_v[0]):   # if two keys have same count, return a key which appears first in t                                  # he string
+      elif (v[0] == temp_v[0]):   # if two keys have same count, return a key which appears first the string
           if (temp_v[1] < v[1]):
              max_k = temp_k
           else:
